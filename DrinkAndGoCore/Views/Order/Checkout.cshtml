@@ -1,0 +1,119 @@
+﻿@model Order
+
+<div class="container">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td colspan="1">
+                    <form asp-action="Checkout" method="post" class="well form-horizontal" role="form">
+                        <fieldset>
+                            @*<div class="form-group">
+            <label asp-for="LastName" class="col-md-4 control-label"></label>
+            <div class="col-md-8 inputGroupContainer">
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>*@
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="LastName"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="LastName" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input asp-for="LastName" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="FirstName"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="FirstName" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input asp-for="FirstName" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="AddressLine1"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="AddressLine1" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input asp-for="AddressLine1" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="AddressLine2"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="AddressLine2" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input asp-for="AddressLine2" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="AddressLine2" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="ZipCode"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="ZipCode" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input asp-for="ZipCode" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="ZipCode" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="State"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="State" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input asp-for="State" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="State" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="Country"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="Country" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><input asp-for="Country" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="Country" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="PhoneNumber"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="PhoneNumber" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input asp-for="PhoneNumber" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" asp-for="Email"></label>
+                                <div class="col-md-8 inputGroupContainer">
+                                    <div asp-for="Email" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input asp-for="Email" class="form-control" type="text">
+                                    </div>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <div class="btn-group col-md-offset-8">
+                                    <input class="btn btn-success" type="submit" value="Complete order" />
+                                    @*<input class="btn btn-default" type="submit" value="Return " />*@
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
